@@ -4,6 +4,12 @@ import "fmt"
 
 func Pangkat(base, pangkat int) int {
 	// your code here
+	var total int = 1
+
+	for i := 0; i < pangkat; i++ {
+		total = total * base
+	}
+	return total
 }
 
 func main() {
